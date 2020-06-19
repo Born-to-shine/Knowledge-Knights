@@ -1,0 +1,90 @@
+<html>
+
+<title> Quick Sort </title>
+
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+<body>
+
+<div class="div1">
+<p>
+<img class="image" src = "Geek.jpg"/>
+<h1 class="head">Knowledge Knights</h1>
+</p>
+</div>
+
+<div class="option">
+<ul>
+	<li><a href = " Main.html">Home</a></li>
+	<li><a href = "ProgrammingQuestions.html">Programming Questions</a></li>
+	<li><a href = "Aptitude.html">Aptitude</a></li>
+	<li><a href = "Puzzles.html">Puzzles</a></li>
+	<li><a href = "Setting.html">Settings</a></li>
+	<li><a href = "About.html">About</a></li>
+</ul>
+</div>
+
+<div class="optionresult">
+
+<h1 class="headings">Programming Questions</h1>
+<h1 class="headings">Quick Sort</h1>
+
+<p class="explain">
+&emsp; &emsp; QuickSort is a Divide and Conquer algorithm. It picks an element as pivot and partitions the given array around the 
+picked pivot. There are many different versions of quickSort that pick pivot in different ways.<br/>
+1.Always pick first element as pivot.<br/>
+2.Always pick last element as pivot (implemented below)<br/>
+3.Pick a random element as pivot.<br/>
+4.Pick median as pivot.<br/>
+&emsp; The key process in quickSort is partition(). Target of partitions is, given an array and an element x of array as pivot, put x at its correct 
+position in sorted array and put all smaller elements (smaller than x) before x, and put all greater elements (greater than x) after x. 
+All this should be done in linear time.
+</p>
+
+<div class="div3">
+<h1 class="heading">C Function </h1>
+<pre>
+<p class="programs"> 
+void swap(int *a, int *b)
+{
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+void quicksort(int arr[], int l, int r)
+{
+    if (l >= r)
+        return;
+    int pivot = arr[r];
+    int cnt = l;
+    for (int i = l; i <= r; i++)
+    {
+        if (arr[i] <= pivot)
+        {
+            swap(&arr[cnt], &arr[i]);
+            cnt++;
+        }
+    }
+    quicksort(arr, l, cnt-2); 
+    quicksort(arr, cnt, r);   
+}
+//Function calling
+quicksort(a, 0, n-1);
+</p></pre>
+</div>
+
+<p class="explain"> Input: 
+<div class="IO">
+64 34 25 12 22 11 90
+</div>
+</p>
+<p class="explain"> Output: </p>
+<div class="IO">
+Sorted array:
+11 12 22 25 34 64 90
+</div>
+	
+</div>
+</body>
+
+<html>

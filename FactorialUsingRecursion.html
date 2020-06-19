@@ -1,0 +1,75 @@
+<html>
+
+<title> Factorial Using Recursion </title>
+
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+<body>
+
+<div class="div1">
+<p>
+<img class="image" src = "Geek.jpg"/>
+<h1 class="head">Knowledge Knights</h1>
+</p>
+</div>
+
+<div class="option">
+<ul>
+	<li><a href = " Main.html">Home</a></li>
+	<li><a href = "ProgrammingQuestions.html">Programming Questions</a></li>
+	<li><a href = "Aptitude.html">Aptitude</a></li>
+	<li><a href = "Puzzles.html">Puzzles</a></li>
+	<li><a href = "Setting.html">Settings</a></li>
+	<li><a href = "About.html">About</a></li>
+</ul>
+</div>
+
+<div class="optionresult">
+
+<h1 class="headings">Programming Questions</h1>
+<h1 class="headings">Factorial Using Recursion</h1>
+
+<p class="explain">
+&emsp; &emsp; Factorial of a non-negative integer, is multiplication of all integers smaller than or equal to n. For example factorial of 
+6 is 6*5*4*3*2*1 which is 720.<br/>
+Recursive Solution:<br/>
+Factorial can be calculated using following recursive formula.<br/>
+n! = n * (n-1)!<br/>
+n! = 1 if n = 0 or n = 1 <br/>
+</p>
+
+<div class="div3">
+<h1 class="heading">C Program </h1>
+<pre>
+<p class="programs">
+int factorial(int n)
+{
+    if(n==0)
+        return 1;
+    else
+        return(n*factorial(n-1));
+}
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    int fac = factorial(n);
+    printf("%d",fac);
+}
+</p></pre>
+</div>
+
+<p class="explain"> Input: 
+<div class="IO">
+5
+</div>
+</p>
+<p class="explain"> Output: </p>
+<div class="IO">
+120
+</div>
+	
+</div>
+</body>
+
+<html>

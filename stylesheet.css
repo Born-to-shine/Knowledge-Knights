@@ -1,0 +1,239 @@
+body{
+	background: blue;
+	background-image: url("Background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+.image{
+	width: 100px;
+	height: 100px;
+	padding: 10px;
+	background-color: rgb(188, 221, 245);
+	background: linear-gradient(to bottom right, rgb(188, 221, 245), rgb(65, 72, 150));
+	border-color: rgb(65, 72, 150);
+	border-width: 5px;
+	border-style: groove;
+	float: left;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	border-radius : 10px;
+	display: block;
+	box-shadow: 3px 3px 5px 7px rgba(0,0,0,0.6);
+}
+.head{
+	font-size: 50px;
+	/*color: rgb(188, 221, 245);*/
+	color: white;
+	position: absolute;
+	top: 30px;
+	left: 180px;
+	font-family: Geneva;
+	font-weight: bold;
+	font-style: oblique;
+	display: inline;
+	text-shadow: 3px 3px 5px rgba(65, 72, 150, 0.6);
+}
+
+.login, .login1{
+	top: 20px;
+	right: 20px;
+	font-family: Georgia;
+	font-size: 20px;
+	line-height: 1em;
+	color: white;
+	font-weight: normal;
+}
+
+.login{
+	position: absolute;
+}
+.submit{
+	font-family: Georgia;
+	font-size: 15px;
+	padding: 5px 5px 5px 5px;
+	background-color: rgb(91, 118, 207);
+	background: linear-gradient(to bottom right, rgb(91, 118, 207), rgb(65, 72, 150));
+	color: white;
+	border: 1px groove rgb(65, 72, 150);
+	cursor: hand;
+}
+
+.submit:hover{
+	background-color: rgb(65, 72, 150);
+	background: linear-gradient(to bottom right, rgb(65, 72, 150), rgb(46, 51, 105));
+	color: white;
+}
+
+.option ul{
+	float: left;
+	position: absolute;
+	top: 170px;
+	left: 15px;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.option ul li a{
+	text-decoration: none;
+	font-family: Georgia;
+	background-color: rgb(91, 118, 207);
+	background: linear-gradient(to bottom right, rgb(91, 118, 207), rgb(65, 72, 150));
+	box-shadow: 3px 3px 5px 7px rgba(46, 51, 105,0.6);
+	color: white;
+	display: block;
+	width: 250px;
+	margin: 10px;
+	padding: 15px;
+	text-align: center;
+	height: 25px;
+	line-height: 25px;
+	font-size: 20px;
+	border-radius: 5px;
+}
+
+.option ul li a:hover{
+	background-color: rgb(65, 72, 150);
+	background: linear-gradient(to bottom right, rgb(65, 72, 150), rgb(46, 51, 105));
+	color: white;
+}
+
+.programs{
+	margin: 20px;
+	font-size: 25px;
+	font-family: Calibri;
+	color: black;
+	line-height: 1.2em;
+}
+
+.div3{
+	background-color: rgb(188, 221, 245);
+	background: linear-gradient(to bottom right, rgb(188, 221, 245), rgb(65, 72, 150));
+	border-color: rgb(65, 72, 150);
+	border-width: 5px;
+	border-style: groove;
+	border-radius : 10px;
+	width: 500px;
+	margin-left: 175px;
+
+}
+.headings{
+	font-size: 45px;
+	text-align:center;
+	font-family: Geneva;
+	font-weight: bold;
+	font-style: oblique;
+	color: white;
+}
+
+.heading{
+	font-size: 35px;
+	text-align:center;
+	color: rgb(0, 7, 59);
+	font-family: Geneva;
+	font-weight: bold;
+	font-style: oblique;
+}
+.div1{
+	height: 125px;
+}
+
+.optionresult, .optionresult1{
+	background-color: rgb(91, 118, 207);
+	background: linear-gradient(to bottom right, rgba(91, 118, 207,0.4), rgb(65, 72, 150));
+	border-radius: 5px;	
+	width: 600px;
+	font-family: Georgia;
+	font-size: 25px;
+	color: white;
+	line-height: 2.5em;
+	margin: 50px 350px;
+	padding: 10px 20px 20px 20px;
+}
+
+.optionresult{
+	width: 800px;
+	line-height: 1.5em;
+}
+.optionresult a{
+	text-decoration:none;
+	color:white;
+}
+
+.verticalbar ul{
+	padding:5px;
+	list-style-type:none;
+	text-align: left;
+	background-color: rgb(91, 118, 207);
+	background: linear-gradient(to bottom right, rgb(91, 118, 207), rgb(65, 72, 150));
+	margin: 40px 10px 10px 10px;
+	border-radius: 5px;
+	height:30px;
+	line-height:28px;
+}
+
+.verticalbar ul li{
+	display: inline;
+}
+
+.verticalbar ul li a{
+	font-size: 20px;
+	text-decoration: none;
+	font-family: Georgia;
+	padding: 0.2em 1em;
+	color: white;
+}
+
+.verticalbar ul li a:hover{
+	background-color: rgb(65, 72, 150);
+	background: linear-gradient(to bottom right, rgb(65, 72, 150), rgb(46, 51, 105));
+	color: white;
+	border-radius: 5px;
+}
+
+p.explain{
+	font-family: Georgia;
+	font-size: 20px;
+	color: white;
+	line-height: 1.5em;
+}
+
+.IO{
+	background-color: rgb(65, 72, 150);
+	border-radius: 5px;	
+	padding: 10px 10px 10px 10px;
+}
+
+.login1{
+	color:white;
+	display: table;
+	padding:5px;
+	line-height: 2.5em;
+}
+
+.row{
+	display: table-row;
+}
+
+.row label{
+	display: table-cell;
+	padding: 2px;
+}
+
+.row input{
+	display: table-cell;
+	padding: 2px;
+}
+
+.thought{
+	font-family: Geneva;
+	font-weight: bold;
+	font-style: oblique;
+	font-size: 25px;
+	text-shadow: 3px 3px 5px rgba(65, 72, 150, 0.6);
+	line-height: 1.2em;
+	color: white;
+}

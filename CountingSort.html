@@ -1,0 +1,84 @@
+<html>
+
+<title> Counting Sort </title>
+
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+<body>
+
+<div class="div1">
+<p>
+<img class="image" src = "Geek.jpg"/>
+<h1 class="head">Knowledge Knights</h1>
+</p>
+</div>
+
+<div class="option">
+<ul>
+	<li><a href = " Main.html">Home</a></li>
+	<li><a href = "ProgrammingQuestions.html">Programming Questions</a></li>
+	<li><a href = "Aptitude.html">Aptitude</a></li>
+	<li><a href = "Puzzles.html">Puzzles</a></li>
+	<li><a href = "Setting.html">Settings</a></li>
+	<li><a href = "About.html">About</a></li>
+</ul>
+</div>
+
+<div class="optionresult">
+
+<h1 class="headings">Programming Questions</h1>
+<h1 class="headings">Counting Sort</h1>
+
+<p class="explain">
+&emsp; &emsp; Counting sort is a sorting technique based on keys between a specific range. It works by counting the number of objects 
+having distinct key values (kind of hashing). Then doing some arithmetic to calculate the position of each object in the output sequence.
+Let us understand it with the help of an example.<br/>
+For simplicity, consider the data in the range 0 to 9. <br/>
+Input data: 1, 4, 1, 2, 7, 5, 2<br/>
+  1) Take a count array to store the count of each unique object.<br/>
+  Index:     0  1  2  3  4  5  6  7  8  9<br/>
+  Count:     0  2  2  0   1  1  0  1  0  0<br/>
+  2) Modify the count array such that each element at each index stores the sum of previous counts. <br/>
+  Index:     0  1  2  3  4  5  6  7  8  9<br/>
+  Count:     0  2  4  4  5  6  6  7  7  7<br/>
+The modified count array indicates the position of each object in the output sequence.<br/>
+  3) Output each object from the input sequence followed by decreasing its count by 1.Process the input data: 1, 4, 1, 2, 7, 5, 2. Position of 1 is 2.
+Put data 1 at index 2 in output. Decrease count by 1 to place next data 1 at an index 1 smaller than this index.<br/>
+</p>
+
+<div class="div3">
+<h1 class="heading">C Program </h1>
+<pre>
+<p class="programs"> 
+#include<stdio.h>
+int main(){
+    int n,i,x,j;
+    scanf("%d",&n);
+    int a[100]={0};
+    for(i=0;i &lt n;i++){
+        scanf("%d",&x);
+        a[x]++;
+    }
+    for(i=0;i &lt 100;i++){
+        for(j=0;j &lt a[i];j++)
+            printf("%d ",i);
+    }
+}
+</p></pre>
+</div>
+
+<p class="explain"> Input: 
+<div class="IO">
+64 34 25 12 22 11 90
+</div>
+</p>
+<p class="explain"> Output: </p>
+<div class="IO">
+Sorted array:
+11 12 22 25 34 64 90
+</div>
+	
+</div>
+</body>
+
+<html>

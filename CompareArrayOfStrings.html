@@ -1,0 +1,89 @@
+<html>
+
+<title> Compare Array of Strings </title>
+
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+<body>
+
+<div class="div1">
+<p>
+<img class="image" src = "Geek.jpg"/>
+<h1 class="head">Knowledge Knights</h1>
+</p>
+</div>
+
+<div class="option">
+<ul>
+	<li><a href = " Main.html">Home</a></li>
+	<li><a href = "ProgrammingQuestions.html">Programming Questions</a></li>
+	<li><a href = "Aptitude.html">Aptitude</a></li>
+	<li><a href = "Puzzles.html">Puzzles</a></li>
+	<li><a href = "Setting.html">Settings</a></li>
+	<li><a href = "About.html">About</a></li>
+</ul>
+</div>
+
+<div class="optionresult">
+
+<h1 class="headings">Programming Questions</h1>
+<h1 class="headings">Compare Array of Strings</h1>
+
+<p class="explain">
+&emsp; &emsp; String is a sequence of characters. In Java, objects of String are immutable which means they are constant and cannot be 
+changed once created.Below are 5 ways to compare two Strings in Java:<br/>
+Using user-defined function : Define a function to compare values with following conditions :<br/>
+if (string1 > string2) it returns a positive value.<br/>
+if both the strings are equal lexicographically<br/>
+i.e.(string1 == string2) it returns 0.<br/>
+if (string1 < string2) it returns a negative value.<br/>
+The value is calculated as (int)str1.charAt(i) – (int)str2.charAt(i)<br/>
+</p>
+
+<div class="div3">
+<h1 class="heading">Java Function </h1>
+<pre>
+<p class="programs"> 
+import java.util.*;
+public class Solution{
+    public static void main(String[] args){
+        int n,m,i,j;
+        Scanner scan = new Scanner(System.in);
+        n = scan.nextInt();
+        String a[] = new String[n];
+        for(i=0;i &lt n;i++)
+            a[i]=scan.next();
+        m = scan.nextInt();
+        String b[] = new String[m];
+        int c[] = new int[m];
+        for(i=0;i &lt m;i++){
+            c[i]=0;
+            b[i]=scan.next();
+            for(j=0;j &lt n;j++){
+                if(b[i].equals(a[j])){
+                    c[i]++;
+                }
+            }
+        }
+        for(i=0;i &lt m;i++)
+            System.out.println(c[i]+" ");
+    }
+}
+</p></pre>
+</div>
+
+<p class="explain"> Input: 
+<div class="IO">
+GeeksforGeeks<br/>
+Practice
+</div>
+</p>
+<p class="explain"> Output: </p>
+<div class="IO">
+-9
+</div>
+	
+</div>
+</body>
+
+<html>

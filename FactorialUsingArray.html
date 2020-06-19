@@ -1,0 +1,100 @@
+<html>
+
+<title> Factorial Using Array </title>
+
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+<body>
+
+<div class="div1">
+<p>
+<img class="image" src = "Geek.jpg"/>
+<h1 class="head">Knowledge Knights</h1>
+</p>
+</div>
+
+<div class="option">
+<ul>
+	<li><a href = " Main.html">Home</a></li>
+	<li><a href = "ProgrammingQuestions.html">Programming Questions</a></li>
+	<li><a href = "Aptitude.html">Aptitude</a></li>
+	<li><a href = "Puzzles.html">Puzzles</a></li>
+	<li><a href = "Setting.html">Settings</a></li>
+	<li><a href = "About.html">About</a></li>
+</ul>
+</div>
+
+<div class="optionresult">
+
+<h1 class="headings">Programming Questions</h1>
+<h1 class="headings">Factorial Using Array</h1>
+
+<p class="explain">
+&emsp; &emsp; Bubble sort, sometimes referred to as sinking sort, is a simple sorting algorithm that repeatedly steps through the list, compares adjacent 
+elements and swaps them if they are in the wrong order. The pass through the list is repeated until the list is sorted. The algorithm, which is 
+a comparison sort, is named for the way smaller or larger elements "bubble" to the top of the list. Although the algorithm is simple, it is too 
+slow and impractical for most problems even when compared to insertion sort.Bubble sort can be practical if the input is in mostly sorted 
+order with some out-of-order elements nearly in position.
+</p>
+
+<div class="div3">
+<h1 class="heading">C Function </h1>
+<pre>
+<p class="programs">
+Find factorial of long integers like 100!
+#include  &lt bits/stdc++.h &gt 
+using namespace std;
+#define MAX 500
+int multiply(int x, int res[], int res_size);
+void extraLongFactorials(int n) {
+    int res[MAX];
+    res[0] = 1;
+    int res_size = 1;
+    for (int x = 2; x  &lt = n; x++)
+      res_size = multiply(x, res, res_size);
+    for (int i = res_size - 1; i  &gt = 0; i--)
+      cout  &lt  &lt  res[i];
+  }
+  int multiply(int x, int res[], int res_size) {
+    int carry = 0; 
+    for (int i = 0; i  &lt  res_size; i++) {
+      int prod = res[i] * x + carry;
+      res[i] = prod % 10;
+      carry = prod / 10;
+    }
+    while (carry) {
+      res[res_size] = carry % 10;
+      carry = carry / 10;
+      res_size++;
+    }
+    return res_size;
+  }
+
+int main()
+{
+    int n;
+    cin  &gt  &gt  n;
+    cin.ignore(numeric_limits &lt streamsize &gt ::max(), '\n');
+
+    extraLongFactorials(n);
+
+    return 0;
+}
+
+</p></pre>
+</div>
+
+<p class="explain"> Input: 
+<div class="IO">
+arr[ ] = {3, 10, 200, 20, 12}
+</div>
+</p>
+<p class="explain"> Output: </p>
+<div class="IO">
+6 3628800 722479105 146326063 479001600
+</div>
+	
+</div>
+</body>
+
+<html>
